@@ -1,46 +1,53 @@
 # Personal Expense Tracker
-A beginner-friendly Python command-line application for managing
-personal expenses and monthly budgets.
+
+A beginner-friendly command-line expense tracking application
+built using Python, JSON file handling, and Matplotlib.
 
 ## Features
-- Add, view, edit, and delete expenses
-- Store expenses and budgets in SQLite
-- Set and update monthly budgets
-- Check spending and remaining budget
-- Daily, weekly, and monthly summaries
-- Category-wise totals and percentages
-- Rule-based spending insights
-- Monthly dashboard
-- Generate pie, bar, and spending trend charts
 
-## Excluded Features
-- Monthly income
-- Search and filter
-- Graphical user interface
-- Web dashboard
+- Add, view, edit, and delete expenses
+- Store expenses permanently in JSON files
+- Set and update monthly budgets
+- Calculate monthly spending and remaining budget
+- Analyze category-wise expenses
+- Display spending insights
+- Generate pie, bar, and daily trend charts
 
 ## Requirements
+
 - Python 3.10 or later
 - Matplotlib
 
-## Setup
-Open a terminal in the project folder.
-Create a virtual environment:
-    python -m venv .venv
-Activate it on Windows Command Prompt:
-    .venv\Scripts\activate.ps1
+## Installation
 
-Install dependencies:
+Install the dependency:
+
     python -m pip install -r requirements.txt
 
-## Run the Application
+## Run the application
+
+From the project folder, run:
+
     python run_tracker.py
 
-## Database
-The database is stored at:
-    data/expenses.db
+## Data storage
 
-## Charts
-Generated images are stored in:
+Expenses are saved in:
+
+    data/expenses.json
+
+Monthly budgets are saved in:
+
+    data/budgets.json
+
+Charts are saved in:
+
     charts/
-The chart files are generated for the month selected by the user.
+
+The application creates the data folder and JSON files
+automatically when it starts.
+
+## Important
+
+Keep backups of your JSON files. Do not manually delete
+them if you want to preserve your expense history.
